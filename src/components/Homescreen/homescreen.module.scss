@@ -52,8 +52,22 @@
 				margin: 0 0 24px 0;
 			}
 
-			img {
-				width: 120px;
+			.hoverAnimation {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				margin: 5px auto;
+				width: 125px;
+				height: 125px;
+				background-image: url(../../images/ribn-logo.png);
+				background-repeat: round;
+				border-radius: 75px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 20px;
+				font-weight: lighter;
+				letter-spacing: 2px;
+				transition: 1s box-shadow;
 			}
 
 			p {
@@ -71,6 +85,7 @@
 				text-transform: uppercase;
 				font-family: "San Francisco";
 				font-weight: bold;
+				cursor: pointer;
 			}
 		}		
 	}
@@ -90,5 +105,104 @@
 		right: 0;
 		top: 0;
 		bottom: 0;
+	}
+
+	.card .content:hover .hoverAnimation {
+		box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+	}
+	
+	.card .content:hover .hoverAnimation:before, .card .content:hover .hoverAnimation:after {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 125px;
+		height: 125px;
+		background: #c0e8d9;
+		border-radius: 75px;
+		z-index: -1;
+		animation: 1s clockwise infinite;
+	}
+	
+	.card .content:hover .hoverAnimation:after {
+		background: #cffda8;
+		animation: 2s counterclockwise infinite;
+	}
+	
+	@keyframes clockwise {
+		0% {
+			top: -5px;
+			left: 0;
+		}
+		12% {
+			top: -2px;
+			left: 2px;
+		}
+		25% {
+			top: 0;
+			left: 5px;    
+		}
+		37% {
+			top: 2px;
+			left: 2px;
+		}
+		50% {
+			top: 5px;
+			left: 0;    
+		}
+		62% {
+			top: 2px;
+			left: -2px;
+		}
+		75% {
+			top: 0;
+			left: -5px;
+		}
+		87% {
+			top: -2px;
+			left: -2px;
+		}
+		100% {
+			top: -5px;
+			left: 0;    
+		}
+	}
+	
+	@keyframes counterclockwise {
+		0% {
+			top: -5px;
+			right: 0;
+		}
+		12% {
+			top: -2px;
+			right: 2px;
+		}
+		25% {
+			top: 0;
+			right: 5px;    
+		}
+		37% {
+			top: 2px;
+			right: 2px;
+		}
+		50% {
+			top: 5px;
+			right: 0;    
+		}
+		62% {
+			top: 2px;
+			right: -2px;
+		}
+		75% {
+			top: 0;
+			right: -5px;
+		}
+		87% {
+			top: -2px;
+			right: -2px;
+		}
+		100% {
+			top: -5px;
+			right: 0;    
+		}
 	}
 }
