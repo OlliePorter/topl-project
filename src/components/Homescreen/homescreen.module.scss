@@ -6,28 +6,59 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ font-family: "San Francisco";
 	
 	.card {
 		max-width: 500px;
 		margin: auto;
 		height: auto;
-		padding: 40px;
+		padding: 30px;
 		position: relative;
-		border-radius: 15px;
-		background-color: white;
+		border-radius: 8px;
 		box-shadow: 2px 2px 50px rgb(0 0 0 / 20%);
 		transition: transform 0.1s ease;
 		transform-style: preserve-3d;
 		will-change: transform;
+		background: url("https://uploads-ssl.webflow.com/60f98f46d44e675abb7e66ea/611b371937b6551d8aab3aa8_mom-p-1080.jpeg") no-repeat;
+		background-size: cover;
 
 		.content {
 			position: relative;
+			color: white;
 			z-index: 1;
 			transition: transform 0.3s ease;
+			text-align: center;
+			padding: 16px;
+
+			h2 {
+				font-size: 40px;
+			}
+
+			img {
+				width: 120px;
+			}
+
+			p {
+				font-size: 24px;
+				font-weight: lighter;
+			}
 		}		
 	}
 	
 	.card:hover .content {
 		transform: translateZ(12px);
+	}
+
+	.card::before {
+		content: "";
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 8px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
 }

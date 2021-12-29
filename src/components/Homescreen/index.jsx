@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./homescreen.module.scss";
+import logo from "../../images/ribn-logo.png";
 
 const Homescreen = () => {
   const card = useRef();
@@ -36,6 +37,7 @@ const Homescreen = () => {
         <div ref={card} className={styles.card}>
           <div className={styles.content}>
             <h2>Ribn Wallet</h2>
+            <img src={logo} alt="logo" />
             <p>
               Topl's blockchain wallet for tracking, tokenizing,
               and transacting impact.
