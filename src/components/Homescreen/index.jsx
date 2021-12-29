@@ -33,16 +33,16 @@ const Homescreen = () => {
 
   return (
     <div className={styles.heroSection}>
-      <div className={styles.container}>
-        <div ref={card} className={styles.card}>
-          <div className={styles.content}>
-            <h2>Ribn Wallet</h2>
-            <img src={logo} alt="logo" />
-            <p>
-              Topl's blockchain wallet for tracking, tokenizing,
-              and transacting impact.
-            </p>
-          </div>
+      <div className={styles.slidingBackground} />
+      <div ref={card} className={styles.card}>
+        <div className={styles.content}>
+          <h2>Ribn Wallet</h2>
+          <img src={logo} alt="logo" />
+          <p>
+            Topl's blockchain wallet for tracking, tokenizing,
+            and transacting impact.
+          </p>
+          <button>Continue</button>
         </div>
     </div>
   </div>
