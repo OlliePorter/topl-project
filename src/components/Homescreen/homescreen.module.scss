@@ -29,7 +29,7 @@
 		max-width: 500px;
 		margin: auto;
 		height: auto;
-		padding: 30px;
+		padding: 20px;
 		position: absolute;
 		border-radius: 8px;
 		box-shadow: 2px 2px 50px rgb(0 0 0 / 20%);
@@ -44,8 +44,10 @@
 			color: white;
 			z-index: 1;
 			transition: transform 0.3s ease;
+			display: flex;
+			flex-direction: column;
 			text-align: center;
-			padding: 16px;
+			padding: 16px 64px;
 
 			h2 {
 				font-size: 40px;
@@ -63,10 +65,6 @@
 				background-image: url(../../images/ribn-logo.png);
 				background-repeat: round;
 				border-radius: 75px;
-				font-family: 'Montserrat', sans-serif;
-				font-size: 20px;
-				font-weight: lighter;
-				letter-spacing: 2px;
 				transition: 1s box-shadow;
 			}
 
@@ -75,17 +73,62 @@
 				font-weight: lighter;
 			}
 
-			button {
-				background-color: #07766C;
-				color: white;
-				padding: 18px 72px;
-    		border-radius: 50px;
-    		border: none;
-				font-size: 14px;
-				text-transform: uppercase;
-				font-family: "San Francisco";
-				font-weight: bold;
+			p:last-of-type {
+				margin: 24px 0 0 0;
+				font-size: 16px;
+				text-decoration: underline;
 				cursor: pointer;
+			}
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+				margin-top: 16px;
+
+				label {
+					font-family: "San Francisco";
+					font-size: 18px;
+					margin-bottom: 8px;
+				}
+
+				input {
+					// padding: 18px 72px;
+					padding: 16px;
+					padding-right: 72px;
+					margin-bottom: 16px;
+					border-radius: 50px;
+					border: none;
+					text-align: left;
+					outline: none;
+					font-family: "San Francisco";
+					font-size: 18px;
+				}
+			}
+
+			.buttons {
+				display: flex;
+				flex-direction: row;
+
+				button {
+					flex: 1;
+					background-color: #07766C;
+					color: white;
+					padding: 18px;
+					border-radius: 50px;
+					border: none;
+					font-size: 14px;
+					text-transform: uppercase;
+					font-family: "San Francisco";
+					font-weight: bold;
+					cursor: pointer;
+
+					&:last-of-type {
+						margin-left: 16px;
+						border: 2px solid white;
+						background-color: transparent;
+					}
+				}
 			}
 		}		
 	}

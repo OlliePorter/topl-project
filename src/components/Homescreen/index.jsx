@@ -41,7 +41,19 @@ const Homescreen = () => {
             Topl's blockchain wallet for tracking, tokenizing,
             and transacting impact.
           </p>
-          <button>Continue</button>
+          <div className={styles.container}>
+            <label htmlFor="password">Wallet password</label>
+            <input 
+              placeholder="Enter here..."
+              name="password"
+              id="password"
+            />
+           </div>
+           <div className={styles.buttons}>
+            <button>Continue</button>
+            <button>Restore Wallet</button>
+           </div>
+           <p>Need help?</p>
         </div>
     </div>
   </div>
