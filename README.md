@@ -1,8 +1,25 @@
-# Getting Started with Create React App
+<img width="200" alt="Ribn Logo" src="https://user-images.githubusercontent.com/13727615/147752221-61c87204-1455-49b5-ab6c-97cec34a60c4.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Topl Homepage Redesign
 
-## Available Scripts
+[Topl](https://www.topl.co/) is **the world's first blockchain built to be a global impact monetization engine**. This React project redesigns the home page of Topl's digital blockchain wallet called Ribn. 
+
+## BEFORE:
+
+<img width="398" alt="Ribn Wallet" src="https://user-images.githubusercontent.com/13727615/147751760-f56d9e65-6086-48d1-bac1-efb1712d8df5.png">
+
+## AFTER:
+
+<img width="1280" alt="Screenshot 2021-12-30 at 12 18 46" src="https://user-images.githubusercontent.com/13727615/147751383-8a03caa8-4f1b-4940-acf4-30e31ad837fb.png">
+
+## Change summary
+The hero component now includes multiple visual changes and animations in order to make the home page more friendly, immersive and emotive. 
+- The user can now interact with the homescreen card by moving their cursor around the area, which will rotate the card in an interactive way
+- A new animation has been added to the Ribn logo which draws and entertains the eye when the cursor interacts with the card area
+- The homescreen card has a new, rounder design language along with a fresh San-Franciso typeface
+- The infinite scrolling background design implies a limitless network of multiple nodes, each which contribute impact to the web of sustainability
+
+## To run the app
 
 In the project directory, you can run:
 
@@ -13,58 +30,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
